@@ -1,7 +1,12 @@
 import React from 'react';
 import cn from 'classnames';
 
-const TodoItem: React.FC<{ completed: boolean, value: string }> = ({
+type TodoItemProps = {
+  completed: boolean,
+  value: string
+}
+
+const TodoItem: React.FC<TodoItemProps> = ({
   completed = false,
   value
 }) => {

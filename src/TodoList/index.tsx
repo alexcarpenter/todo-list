@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TodoList: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const TodoList: React.FC<{}> = ({ children }) => {
   return (
     <ul className="c-list">
       {React.Children.map(children, (child, i) => {
